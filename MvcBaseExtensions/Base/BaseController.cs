@@ -21,7 +21,7 @@ namespace MvcBaseExtensions.Base
         /// </summary>
         /// <param name="data">data to return</param>
         /// <returns>JSON object</returns>
-        public JsonResult Success(object data)
+        public JsonResult Success(object data = null)
         {
             return this.Json(new { success = true, response = data });
         }
